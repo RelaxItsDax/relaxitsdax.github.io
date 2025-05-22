@@ -110,7 +110,7 @@ html {
     top: 0;
     left: 0;
     box-shadow: none;
-    z-index: -10;
+    z-index: 0;
 }
 
 #stars1 {
@@ -3275,6 +3275,7 @@ body.is-preload #header.alt .logo {
     background-color: #44475a;
     color: #44475a;
     position: absolute;
+    z-index: 10;
     width: 64em;
     max-width: calc(100% - 4em);
     padding: 1em;
@@ -3390,7 +3391,8 @@ body.is-preload #header.alt .logo {
 /* Main */
 
 #main {
-    background-color: rgba(40, 42, 54, 1);
+    background-color: rgba(40, 42, 54, 0.8);
+    position: relative;
     z-index: 1;
     color: #f8f8f2;
     border-radius: 0.25em;
