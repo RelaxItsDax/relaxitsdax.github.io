@@ -2433,28 +2433,40 @@ input[type="radio"]:focus + label:before {
 
 .image.left img, .image.right img {
     width: 100%;
+    height: auto;
+    object-fit: scale-down;
 }
 
 .image.left {
     float: left;
     margin: 0 1.5em 1em 0;
     top: 0.25em;
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
 }
 
 .image.right {
     float: right;
     margin: 0 0 1em 1.5em;
     top: 0.25em;
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
 }
 
 .image.fit {
     display: block;
     margin: 0 0 2em 0;
     width: 100%;
+    height: auto;
+    top: 0;
 }
 
 .image.fit img {
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .image.main {
@@ -2465,6 +2477,11 @@ input[type="radio"]:focus + label:before {
 
 .image.main img {
     width: 100%;
+}
+
+.image.limit {
+    width: 200px;
+    height: 200px;
 }
 
 /* List */
@@ -2687,6 +2704,18 @@ ul.icons li:last-child {
 
 section.special, article.special {
     text-align: center;
+}
+
+section.right {
+    text-align: right;
+    position: relative;
+    display: flex;
+}
+
+section.left {
+    text-align: left;
+    position: relative;
+    display: flex;
 }
 
 header.major {
