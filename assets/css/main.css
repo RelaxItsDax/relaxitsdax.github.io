@@ -96,6 +96,7 @@ body {
 html {
     box-sizing: border-box;
     background: #000000 radial-gradient(ellipse at bottom, #44475a, #000000);
+    overscroll-behavior: none;
 }
 
 *, *:before, *:after {
